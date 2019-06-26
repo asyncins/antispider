@@ -1,0 +1,12 @@
+<html>
+<body>
+    <p>用户无法通过快捷键“F12”唤起开发者工具。</p>
+    <script type="text/javascript">
+    document.onkeydown = function(){
+        if (window.event && window.event.keyCode == 123) {
+            event.returnValue=false
+        }
+    }
+    </script>
+</body>
+</html>

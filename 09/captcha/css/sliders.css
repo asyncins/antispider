@@ -1,0 +1,51 @@
+/* 滑动验证码 */
+.tracks{
+    width: 390px;
+    height: 40px;
+    background: #d0c4fe;
+    overflow: hidden;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    text-align: center;
+}
+#sliderblock{
+    left:0px;
+    position: absolute;
+    color: #fff;
+}
+
+#sliderblock:hover{
+  color: #666;
+}
+
+.trackBase{
+    width: 390px;
+    height: 40px;
+
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    margin-top: -40px;
+}
+.hover{
+    margin-left: 16px;
+    width: 50px;
+    height: 38px;
+    background: #ad99ff;
+    text-align: center;
+    line-height: 38px;
+}
+.hover:hover{
+    background: #fff;
+}
+
+.slidertips {
+  height: 38px;
+  line-height: 38px;
+  color: #fff;
+  visibility: hidden;
+}
+
+.clientfather {
+    width: 390px;
+}

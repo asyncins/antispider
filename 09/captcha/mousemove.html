@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style>
+        *{ 
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        .stage{
+         
+             
+        }
+        .track-monitor{
+         
+            background-color:orange;
+        }
+        .track-pad{
+         
+            height:200px;
+            background-color:green;
+        }
+        .track-coordinate{
+             
+            background-color:purple;
+            color:white;
+            height:25px;
+            line-height:25px;
+            font-size:12px;
+        }
+        .track-coordinate-list{
+         
+            font-size:12px;
+            width:100%;
+            word-break:break-word;
+             
+        }
+        .button1 {
+            width:50px;
+            height:30px;
+        }
+        .button2 {
+            width:100px;
+            height:30px;
+        }
+        .first {
+            width: 300px;
+            padding-left:30px;
+            padding-top:30px;
+        }
+        .second {
+            width: 300px;
+            padding-left:80px;
+            padding-top:70px;
+        }
+
+    </style>
+    <script>
+        window.addEventListener('load',function(){
+            var pad = document.getElementsByClassName('track-pad')[0];
+            var monitor = document.getElementsByClassName('track-monitor')[0];
+            var coordinate = document.getElementsByClassName('track-coordinate')[0];
+            var clist = document.getElementsByClassName('track-coordinate-list')[0];
+            var reset = document.getElementsByTagName('button')[0];
+            var fixSize = function(){
+                monitor.width = window.innerWidth;
+            };
+             
+            var context = monitor.getContext('2d');
+            var cset = [];
+              
+             
+            window.addEventListener('resize',function(){ fixSize(); });
+            pad.addEventListener('mousemove',function(e){
+                context.strokeStyle = 'white';
+                context.lineTo(e.x,e.y);
+                context.stroke();
+                coordinate.innerHTML = e.x+':'+e.y;
+                cset.push(coordinate.innerHTML);
+                clist.innerHTML = cset.join(',');
+            });
+            reset.addEventListener('click',function(){
+                fixSize();
+                cset = [];
+                clist.innerHTML = '';
+                coordinate.innerHTML='在绿色的方块中滑动鼠标';
+            });
+            fixSize();
+
+        });
+        function alt(){
+            alert('已点击');
+        }
+    </script>
+</head>
+<body>
+    <div class="stage">
+        <div class="track-pad">
+            <div class="first">
+                <button class="button1" onclick="alt()">first</button>
+            </div>
+            <div class="second">
+                <button class="button2" onclick="alt()">second</button>
+            </div>
+        </div>
+        <canvas width="100" height="200" class="track-monitor"></canvas>
+        <div class="track-coordinate">提示：页面记录绿幕中的鼠标轨迹，并在下方显示</div>
+        <button>重置</button>
+        <div class="track-coordinate-list"></div>
+    </div>
+</body>
+</html>
