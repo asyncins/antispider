@@ -2,7 +2,7 @@
 /* 拼图验证码 */
 
 .jigsaw {
-    /* width: 300px; */
+    width: 420px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4);
@@ -10,7 +10,7 @@
   
   .imagebox {
     position: relative;
-    /* width: 300px; */
+    width: 380px;
     overflow: hidden;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
     height: 287px;
