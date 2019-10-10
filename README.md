@@ -1,4 +1,12 @@
 # antispider 为书籍《Python3 反爬虫原理与绕过实战》配套代码
+
+### 详细目录和封面预览
+
+[前往掘金社区查看](https://juejin.im/post/5d9edd026fb9a04e031bf4ea)
+
+[前往微信公众号查看](https://mp.weixin.qq.com/s/Fj9fFxuAiSmlcuGUkbjY8A)
+
+
 本书共 10 章，除第 1 章环境安装配置外和第 3 章爬虫与反爬虫之外，其他章节涉及的 Python 代码均记录在 antispider 中。包括：
 * 第 2 章 WEB网站的构成和页面渲染
 * 第 4 章 信息校验型反爬虫
@@ -28,3 +36,4 @@ antispider 项目中的代码均经过运行验证，与书本所述相同。使
 
 ### 版权说明
 antispider 项目所包含的代码为图书配套代码，仅供书籍读者个人学习研究所用，任何个人与机构不得以任何方式摘抄、转载、公开项目代码。
+
