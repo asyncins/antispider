@@ -41,3 +41,5 @@ antispider 项目所包含的代码为图书配套代码，仅供书籍读者个
 
 2020-05-29 很多读者反馈第九章用于训练验证码的示例图片下载链接失效，经过核查发现文件还在，但链接莫名其妙的被微云替换了，新链接为 https://share.weiyun.com/5ptKIUg 。
 
+百度网盘的字符验证码素材: https://pan.baidu.com/s/1LoQTK51RHbdXSrJ0o8uxqA  密码: tl5i
+
